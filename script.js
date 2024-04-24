@@ -3,13 +3,19 @@ let symbol = " ";
 let currentYieldAAA = 0;
 let peNoGrowthCompanies = 8.5;
 let avgYieldAAA = 4.4;
-let buttonSet = document.getElementById("btn-set");
-buttonSet.addEventListener("click", set);
 
-function set() {
+let stockTicker = document.getElementById("stockTicker");
+stockTicker.addEventListener("change", setStockTicker);
+let currentYield = document.getElementById("currentYieldAAA");
+currentYield.addEventListener("change", setCurrentYieldAAA);
+
+function setStockTicker() {
   symbol = document.getElementById("stockTicker").value;
+};
+
+function setCurrentYieldAAA() {
   currentYieldAAA = document.getElementById("currentYieldAAA").value;
-}
+};
 
 let buttonSubmit = document.getElementById("btn-submit");
 buttonSubmit.addEventListener("click", intrinsicValue)
