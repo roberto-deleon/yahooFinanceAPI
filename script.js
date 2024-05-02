@@ -20,6 +20,8 @@ function setCurrentYieldAAA() {
 let buttonSubmit = document.getElementById("btn-submit");
 buttonSubmit.addEventListener("click", intrinsicValue)
 
+let currentPrice = document.getElementById("currentPrice");
+
 async function intrinsicValue() {
   const requests = [
     {
@@ -85,6 +87,8 @@ try {
   let peterLynchValuation = (epsGrowth + dividendYield) / trailingPE;
   let benjaminGrahamValuation = (epsTTM * (peNoGrowthCompanies + (2 * epsGrowth)) * avgYieldAAA)/currentYieldAAA;
   
+  currentPrice.innerHTML = pricePerShare;
+
   console.log('bgValuation = ' + benjaminGrahamValuation);
   console.log('price = ' + pricePerShare);
   console.log('currentYieldAAA = ' + currentYieldAAA);
