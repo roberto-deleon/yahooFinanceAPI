@@ -7,6 +7,11 @@ box-sizing: border-box;
 font-family: Barlow;
 }
 
+* {
+    font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
 -webkit-appearance: none;
@@ -15,35 +20,50 @@ margin: 0;
 
 #container-inputSection {
     display: grid ;
-    width: 800px;
-    grid-template-columns: 5fr 1fr;
+    width: 500px;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 1fr;
-    margin-left: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    grid-row-gap: 10px
+
 }
 
 #labelStockTicker {
     grid-row: 1 / 2;
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     display: block;
+    align-content: center;
 }
 
 #stockTicker {
     grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     display: block;
+    height: 30px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
 }
 
 #labelCurrentYieldAAA {
     grid-row: 2 / 3;
-    grid-column: 1 / 2;
+    grid-column: 2 / 3;
     display: block;
-
+    align-content: center;    
 }
 
 #currentYieldAAA {
     grid-row: 2 / 3;
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
     display: block;
+    height: 30px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+
 }
 
 input {
