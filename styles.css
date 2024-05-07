@@ -20,3 +20,27 @@ margin: 0;
     grid-template-rows: 1fr 1fr;
 }
 
+#labelStockTicker {
+    grid-row: 0 / 1;
+    grid-column: 1 / 2;
+    display: block;
+}
+
+#stockTicker {
+    grid-row: 0 / 1;
+    grid-column: 2 / 3;
+    display: block;
+}
+
+#labelCurrentYieldAAA {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: block;
+
+}
+
+#currentYieldAAA {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    display: block;
+}
