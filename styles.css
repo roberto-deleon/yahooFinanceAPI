@@ -86,3 +86,13 @@ input {
         font-size: 16px;
         cursor: pointer;
 }
+
+#container-currentPrice {
+    display: grid;
+    width: 300px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    margin-left: auto;
+    margin-right: auto;
+
+}
