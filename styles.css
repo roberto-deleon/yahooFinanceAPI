@@ -94,5 +94,11 @@ input {
     grid-template-rows: 2fr;
     margin-left: auto;
     margin-right: auto;
-
+    margin-top: 15px;
+    margin-bottom: 15px;
+    grid-row-gap: 8px
 }
+
+#titleCurrentPrice, #currentPrice {
+    text-align: center;
+} 
